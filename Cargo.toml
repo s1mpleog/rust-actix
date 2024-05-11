@@ -1,0 +1,16 @@
+[package]
+name = "todo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.5.1"
+dotenv = "0.15.0"
+futures = "0.3.30"
+serde = "1.0.201"
+serde_derive = "1.0.201"
+
+[dependencies.mongodb]
+version = "2.8.2"
+default-features = false
+features = ["async-std-runtime"]
